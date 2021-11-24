@@ -1,9 +1,9 @@
 node {
-     stage('Clone repository') {
+     stage('Clone repository!!') {
          checkout scm
      }
      stage('Build image') {
-         app = docker.build("gasbugs/flask-example")
+         app = docker.build("musaepal/flask-example")
          
      }
      stage('Push image') {
@@ -15,7 +15,7 @@ node {
 }
 
 stage('Build image') {
-  app = docker.build("gasbugs/flask-example")
+  app = docker.build("musaepal/flask-example")
 }
 
 stage('Push image') {
